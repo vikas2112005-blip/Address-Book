@@ -4,7 +4,6 @@
 #include <ctype.h>
 #include "contact.h"
 #include "file.h"
-// #include "populate.h"
 int arr[100]; 
 int mapcount = 0;   
 
@@ -38,10 +37,6 @@ void initialize(AddressBook *addressBook) // Initializes address book and loads 
     loadContactsFromFile(addressBook);
 }
 
-// void saveAndExit(AddressBook *addressBook) {
-//     saveContactsToFile(addressBook); // Save contacts to file
-//     exit(EXIT_SUCCESS); // Exit the program
-// }
 int isvalidname(char *name)// Validates that name contains only alphabets and spaces
 {
     if(strlen(name)<4)
